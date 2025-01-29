@@ -4,110 +4,139 @@
   margin: 0;
   position: relative;
 }
-
-html,
-body,
-.background {
-  width: 100%;
-  height: 100%;
-  // background: url(https://www.mystart.com/blog/wp-content/uploads/IN_Lotus_Flower_5c51c2e31277c6da2e6c334b.jpeg)
-  //   no-repeat fixed;
-  // background-size: cover;
+h2 {
+  font-size: 35px;
 }
-.container {
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
-  background-color:/* rgba(255, 255, 255, 0.15);*/ rgba(15, 28, 2, 0.4);
+nav {
+  //background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 100, 0, 0.3);
   backdrop-filter: blur(5px);
-}
-
-header {
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
   .logo {
     height: 50px;
   }
-}
-
-footer {
-  display: grid;
-  align-items: end;
-  justify-items: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  background: linear-gradient(#fea79855, #597cbe);
-  overflow: hidden;
-  box-shadow: inset 0 1px 4px -3px white;
-  .lotus {
-    width: 200px;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .mid {
-      z-index: 10;
-      background-color: #f2ef4d;
-      height: 30px;
-      width: 50px;
-      border-radius: 50%;
-    }
-    .leaf {
-      z-index: 1;
-      position: absolute;
-      width: 70px;
-      height: 70px;
-      background-image: linear-gradient(
-        to right bottom,
-        #690003,
-        #881e2b,
-        #a33a51,
-        #bb5778,
-        #cf75a0,
-        #d780a5,
-        #e4b0d3,
-        #e796b1,
-        #e0929a,
-        #d49187,
-        #c49079,
-        #b28f70
-      );
-      border-top-right-radius: 60%;
-      border-bottom-left-radius: 60%;
-      &:nth-child(2) {
-        top: 20px;
-        left: 50%;
-        transform: translate(-50%) rotate(45deg);
-      }
-      &:nth-child(3) {
-        top: 32px;
-        left: 25px;
-        transform: rotateX(35deg);
-      }
-      &:nth-child(4) {
-        top: 68px;
-        left: 20px;
-        transform: rotate(-45deg) rotateX(35deg);
-      }
-      &:nth-child(5) {
-        top: 36px;
-        right: 25px;
-        transform: rotateY(180deg);
-      }
-      &:nth-child(6) {
-        top: 68px;
-        right: 20px;
-        transform: rotate(135deg) rotateX(-35deg);
-      }
-      &:nth-child(7) {
-        height: 50px;
-        width: 50px;
-        top: 38%;
-        right: 41%;
-        transform: translate(50%, 50%) rotate(-77deg) rotateX(180deg);
-      }
-      &:nth-child(8) {
-        height: 50px;
-        width: 50px;
-        top: 38%;
-        left: 14%;
-        transform: translate(50%, 50%) rotate(-89deg);
-      }
-    }
+  h1 {
+    text-shadow: 0px 0px 3px #09520c;
   }
 }
+
+.banner {
+  background: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 255, 0.5),
+      rgba(255, 0, 0, 0.5)
+    ),
+    url("https://www.mystart.com/blog/wp-content/uploads/IN_Lotus_Flower_5c51c2e31277c6da2e6c334b.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  .me-image {
+    max-width: 350px;
+  }
+}
+
+// html,
+// body,
+// .background {
+//   width: 100%;
+//   height: 100%;
+//   // background: url(https://www.mystart.com/blog/wp-content/uploads/IN_Lotus_Flower_5c51c2e31277c6da2e6c334b.jpeg)
+//   //   no-repeat fixed;
+//   // background-size: cover;
+// }
+// .container {
+//   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+//   background-color:/* rgba(255, 255, 255, 0.15);*/ rgba(15, 28, 2, 0.4);
+//   backdrop-filter: blur(5px);
+// }
+
+// header {
+//   .logo {
+//     height: 50px;
+//   }
+// }
+
+// footer {
+//   display: grid;
+//   align-items: end;
+//   justify-items: center;
+//   grid-template-columns: 1fr 1fr 1fr;
+//   background: linear-gradient(#fea79855, #597cbe);
+//   overflow: hidden;
+//   box-shadow: inset 0 1px 4px -3px white;
+//   .lotus {
+//     width: 200px;
+//     height: 200px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     .mid {
+//       z-index: 10;
+//       background-color: #f2ef4d;
+//       height: 30px;
+//       width: 50px;
+//       border-radius: 50%;
+//     }
+//     .leaf {
+//       z-index: 1;
+//       position: absolute;
+//       width: 70px;
+//       height: 70px;
+//       background-image: linear-gradient(
+//         to right bottom,
+//         #690003,
+//         #881e2b,
+//         #a33a51,
+//         #bb5778,
+//         #cf75a0,
+//         #d780a5,
+//         #e4b0d3,
+//         #e796b1,
+//         #e0929a,
+//         #d49187,
+//         #c49079,
+//         #b28f70
+//       );
+//       border-top-right-radius: 60%;
+//       border-bottom-left-radius: 60%;
+//       &:nth-child(2) {
+//         top: 20px;
+//         left: 50%;
+//         transform: translate(-50%) rotate(45deg);
+//       }
+//       &:nth-child(3) {
+//         top: 32px;
+//         left: 25px;
+//         transform: rotateX(35deg);
+//       }
+//       &:nth-child(4) {
+//         top: 68px;
+//         left: 20px;
+//         transform: rotate(-45deg) rotateX(35deg);
+//       }
+//       &:nth-child(5) {
+//         top: 36px;
+//         right: 25px;
+//         transform: rotateY(180deg);
+//       }
+//       &:nth-child(6) {
+//         top: 68px;
+//         right: 20px;
+//         transform: rotate(135deg) rotateX(-35deg);
+//       }
+//       &:nth-child(7) {
+//         height: 50px;
+//         width: 50px;
+//         top: 38%;
+//         right: 41%;
+//         transform: translate(50%, 50%) rotate(-77deg) rotateX(180deg);
+//       }
+//       &:nth-child(8) {
+//         height: 50px;
+//         width: 50px;
+//         top: 38%;
+//         left: 14%;
+//         transform: translate(50%, 50%) rotate(-89deg);
+//       }
+//     }
+//   }
+// }
