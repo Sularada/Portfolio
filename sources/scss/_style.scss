@@ -4,36 +4,59 @@
   margin: 0;
   position: relative;
 }
+body {
+  background-color: #091022;
+}
 h2 {
   font-size: 35px;
 }
 nav {
   //background-color: rgba(0, 0, 0, 0.1);
-  background-color: rgba(0, 100, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
   .logo {
     height: 50px;
   }
-  h1 {
-    text-shadow: 0px 0px 3px #09520c;
-  }
 }
 
 .banner {
-  background: linear-gradient(
-      to bottom right,
-      rgba(0, 0, 255, 0.5),
-      rgba(255, 0, 0, 0.5)
-    ),
-    url("https://www.mystart.com/blog/wp-content/uploads/IN_Lotus_Flower_5c51c2e31277c6da2e6c334b.jpeg");
-  background-size: cover;
-  background-attachment: fixed;
+  // background: linear-gradient(
+  //   to bottom right,
+  //   rgba(0, 0, 255, 0.5),
+  //   rgba(255, 0, 0, 0.5)
+  // );
+  // // url("https://i.pinimg.com/736x/9c/c2/2d/9cc22db04a85387fdb11023adda53f80.jpg")
+  // //   center center;
+  // background-size: cover;
+  // background-attachment: fixed;
   .me-image {
     max-width: 350px;
   }
 }
-
+.zikzak {
+  background-image: url("../../assets/images/zikzak.svg");
+  background-size: contain;
+  background-repeat: repeat;
+  height: 30px;
+  animation: zikzak linear 15s infinite;
+}
+@keyframes zikzak {
+  0% {
+    background-position-x: 0;
+  }
+  50% {
+    background-position-x: 50%;
+  }
+  100% {
+    background-position-x: 100%;
+  }
+}
+#skills {
+  .card {
+    max-width: 200px;
+  }
+}
 // html,
 // body,
 // .background {

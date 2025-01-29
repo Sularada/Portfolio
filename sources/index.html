@@ -21,8 +21,10 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg position-fixed left-0 top-0 z-3 w-100">
+  <body class="w-100 h-100">
+    <nav
+      class="navbar navbar-expand-lg position-fixed left-0 top-0 z-3 w-100 navbar-dark"
+    >
       <div class="container-fluid">
         <a class="navbar-brand d-flex" href="#">
           <h1 class="d-flex align-items-center text-secondary">
@@ -50,34 +52,34 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active fw-medium" aria-current="page" href="#"
+                >Home</a
+              >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#education">Education</a>
+            <li class="nav-item fw-medium">
+              <a class="nav-link" href="#about">About</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#tools">Tools</a>
+            <li class="nav-item fw-medium">
+              <a class="nav-link" href="#education">Education & Intern</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link"></a>
+            <li class="nav-item fw-medium">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item fw-medium">
+              <a class="nav-link" href="#contact">Contact Me</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <main class="position-absolute top-0 w-100">
+    <main class="">
       <section class="banner py-5">
-        <div class="container py-5">
+        <div class="container pt-5">
           <div class="row justify-content-center">
-            <div class="me-image">
-              <img
-                src="../assets/images/leaf.png"
-                class="img-fluid"
-                alt="lotus leaf"
-              />
+            <div class="col-sm-6 col-md-4">
               <img
                 src="../assets/images/20250127_173813.png"
-                class="img-fluid position-absolute top-50 start-50 translate-middle rounded-circle p-4"
+                class="img-fluid ratio ratio-1x1 rounded-5 rounded-bottom-0 border border-dotted pt-2 mb-2"
                 alt="me"
               />
             </div>
@@ -101,38 +103,62 @@
           </div>
         </div>
       </section>
-      <section id="education" class="education pt-6 bg-light">
+      <div class="zikzak w-100"></div>
+      <section id="about" class="pt-6">
         <div class="container">
-          <h2 class="text-center text-danger fw-bolder">Education</h2>
-          <div class="row align-items-center">
-            <div class="col-md-6">
+          <h2 class="text-secondary text-center mb-3">🎆About ME🎆</h2>
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <p class="text-center text-secondary lh-lg">
+                Hi, I'm so glad to see you here. If you browse my page a little
+                bit, you can see that I'm a newly graduated computer engineer.
+                Yes, I finished school and I'm very happy to be an engineer. I'm
+                looking for the job I dreamed of and aimed for while I was
+                studying. I'm currently actively doing research on frontend and
+                data science. If you have anything you want to share, please
+                don't hesitate to get in touch. Knowledge increases as it's
+                shared.😊
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="education" class="education pt-6">
+        <div class="container">
+          <h2 class="text-center text-secondary fw-bolder mb-3">
+            Education & Intern
+          </h2>
+          <div class="row">
+            <div class="col-md-6 col-lg-3">
               <div class="education-info">
                 <ul class="list-unstyled">
                   <li>
-                    <h3>
-                      <i class="fa-solid fa-building-columns text-danger"></i>
-                      University :
+                    <h3 class="text-secondary">
+                      <i class="fa-solid fa-building-columns text-primary"></i>
+                      University
                     </h3>
                   </li>
-                  <p class="fs-5">Manisa Celal Bayar University</p>
+                  <p class="text-secondary fs-5">
+                    Manisa Celal Bayar University
+                  </p>
                   <li>
-                    <h3>
-                      <i class="fa-solid fa-scroll text-danger"></i>
-                      Department :
+                    <h3 class="text-secondary">
+                      <i class="fa-solid fa-scroll text-primary"></i>
+                      Department
                     </h3>
                   </li>
-                  <p class="fs-5">Computer Engineering</p>
+                  <p class="text-secondary fs-5">Computer Engineering</p>
                   <li>
-                    <h3>
-                      <i class="fa-solid fa-scroll text-danger"></i>
-                      Graduation Time :
+                    <h3 class="text-secondary">
+                      <i class="fa-solid fa-scroll text-primary"></i>
+                      Graduation Time
                     </h3>
                   </li>
-                  <p class="fs-5">06 / 2024</p>
+                  <p class="text-secondary fs-5">06 / 2024</p>
                 </ul>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-lg-3 align-self-end">
               <div class="education-image">
                 <img
                   class="img-fluid"
@@ -141,17 +167,214 @@
                 />
               </div>
             </div>
+            <div class="col-lg-6">
+              <div class="intern-cards">
+                <div class="card m-1">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5>
+                        <i class="fa-solid fa-building text-info me-2"></i>NANO
+                      </h5>
+                    </div>
+                    <div class="time text-white-50 fw-medium">3 month</div>
+                    <div class="exp text-white">
+                      It was an internship where I worked on the development of
+                      websites with user interface designs, paying attention to
+                      user experience and mobile compatibility.
+                    </div>
+                    <div class="techs mt-1">
+                      <span class="badge text-bg-danger p-1">HTML</span>
+                      <span class="badge text-bg-light p-1">CSS</span>
+                      <span class="badge text-bg-primary p-1">Bootstrap</span>
+                      <span class="badge text-bg-warning p-1">Javascript</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card m-1">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5>
+                        <i class="fa-solid fa-building text-info me-2"></i
+                        >Vestel City
+                      </h5>
+                    </div>
+                    <div class="time text-white-50 fw-medium">4.5 month</div>
+                    <div class="exp text-white">
+                      I was involved in the monitoring and improvement of
+                      software projects that were running in the systems in the
+                      factories.
+                    </div>
+                    <div class="techs mt-1">
+                      <span class="badge text-bg-info p-1">C#</span>
+                      <span class="badge text-bg-light p-1">.Net</span>
+                      <span class="badge text-bg-dark p-1">SQL</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <section id="tools" class="pt-6">
+      <section id="skills" class="pt-6">
         <div class="container">
-          <h2 class="text-center text-danger fw-bolder">Technologies I Use</h2>
+          <h2 class="text-center text-secondary fw-bolder mb-3">Skills</h2>
           <div class="row justify-content-center">
-            <div class="col-md-8"></div>
+            <div
+              class="col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center mb-2"
+            >
+              <div class="card rounded-circle overflow-hidden">
+                <img
+                  src="../assets/images/html.jpg"
+                  class="img-fluid"
+                  alt="html"
+                />
+              </div>
+            </div>
+            <div
+              class="col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center mb-2"
+            >
+              <div class="card rounded-circle overflow-hidden">
+                <img
+                  src="../assets/images/css.jpg"
+                  class="img-fluid"
+                  alt="css"
+                />
+              </div>
+            </div>
+            <div
+              class="col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center mb-2"
+            >
+              <div class="card rounded-circle overflow-hidden">
+                <img src="../assets/images/js.jpg" class="img-fluid" alt="js" />
+              </div>
+            </div>
+            <div
+              class="col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center mb-2"
+            >
+              <div class="card rounded-circle overflow-hidden">
+                <img
+                  src="https://i.pinimg.com/originals/41/95/cf/4195cf989fac0128a89669f40a1e3496.png"
+                  class="img-fluid"
+                  alt="bootstrap"
+                />
+              </div>
+            </div>
+            <div
+              class="col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center mb-2"
+            >
+              <div class="card rounded-circle overflow-hidden">
+                <img
+                  src="https://www.goliveclasses.co/wp-content/uploads/2023/08/java-logo-1.png"
+                  class="img-fluid"
+                  alt="java"
+                />
+              </div>
+            </div>
+            <div
+              class="col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center mb-2"
+            >
+              <div class="card rounded-circle overflow-hidden">
+                <img
+                  src="https://th.bing.com/th/id/R.8eb72ea6927b25fad5ae96bd88a9e79c?rik=IYUMTuNY5Qting&pid=ImgRaw&r=0"
+                  class="img-fluid"
+                  alt="python"
+                />
+              </div>
+            </div>
+            <div
+              class="col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center mb-2"
+            >
+              <div class="card rounded-circle overflow-hidden">
+                <img
+                  src="https://th.bing.com/th/id/OIP.SqfMGrDwoDSqoxxameG-PgAAAA?w=360&h=360&rs=1&pid=ImgDetMain"
+                  class="img-fluid"
+                  alt="sql"
+                />
+              </div>
+            </div>
+
+            <div
+              class="col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center mb-2"
+            >
+              <div class="card rounded-circle overflow-hidden ratio ratio-1x1">
+                <img
+                  src="https://www.capestart.com/wp-content/uploads/2020/05/tensorflow.png"
+                  class="img-fluid"
+                  alt="tensorlow"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
+      <div id="contact" class="pt-6">
+        <div class="container">
+          <h2 class="text-center text-secondary fw-bolder mb-3">Contact Me</h2>
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <form action="" class="needs-validation" novalidate>
+                <div class="mb-3">
+                  <label
+                    for="formControlEmailInput "
+                    class="form-label text-secondary fw-medium"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="formControlEmailInput"
+                    placeholder="name@gmail.com"
+                    required
+                  />
+                  <div class="valid-feedback">Perfect!</div>
+                  <div class="invalid-feedback">Please check your email!</div>
+                </div>
+                <div class="mb-3">
+                  <label
+                    for="formControlTextarea"
+                    class="form-label text-secondary fw-medium"
+                    >Message</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="formControlTextarea"
+                    rows="3"
+                    required
+                  ></textarea>
+                  <div class="invalid-feedback">Please write your message!</div>
+                </div>
+                <div class="col-12 text-center">
+                  <button
+                    class="btn btn-outline-secondary fw-medium px-5"
+                    type="submit"
+                  >
+                    Send
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="bg-info py-4 mt-5">
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <p class="text-secondary fw-medium m-0">Copyright © 2025</p>
+          <div class="connection-links text-center">
+            <a href="" class="btn btn-outline-secondary rounded-circle mx-1"
+              ><i class="fab fa-github-alt"></i
+            ></a>
+            <a href="" class="btn btn-outline-secondary rounded-circle mx-1"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="" class="btn btn-outline-secondary rounded-circle mx-1"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
       <!-- <section class="about">
         <div class="container">
           <div class="row align-items-center p-3">
@@ -222,5 +445,29 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script>
+      (() => {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach((form) => {
+          form.addEventListener(
+            "submit",
+            (event) => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
   </body>
 </html>
