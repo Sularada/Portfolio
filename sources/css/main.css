@@ -12264,6 +12264,9 @@ nav {
 nav .logo {
   height: 50px;
 }
+nav .nav-link.active {
+  color: #ebd7c6;
+}
 
 .banner .me-image {
   max-width: 350px;
